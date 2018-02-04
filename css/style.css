@@ -17,8 +17,8 @@ a {
 
 hr {
     clear: both;
-
-    color: black;
+    background-color:black;
+    border: 1px solid black;
 }
 
 p {
@@ -264,13 +264,10 @@ img[alt='phone.jpg']:hover {
     outline-color: transparent;
 }
 
-
-
-/*для IE*/
-
+/*для IE
 a img {
     border: none;
-}
+}*/
 
 table {
     font-family: monospace;
@@ -299,11 +296,17 @@ th {
     background: grey;
 }
 
-.footer p {
+.footer #right {
     float: right;
 
     margin-top: 3%;
     margin-right: 5%;
+}
+
+.footer p img{
+    float: left;
+    margin-top: 3%;
+    margin-left: 4%;
 }
 
 h1.heading+a img {
@@ -373,10 +376,7 @@ input[name='buy']:active {
     align-self: center;
 }
 
-
-
 /*не удобство при адаптивности нескольких строк bootstrap сетки*/
-
 @media screen and (max-width: 995px) {
     .col-md-4 {
         width: 38%;
@@ -390,3 +390,4 @@ input[name='buy']:active {
         margin: 3% 19%;
     }
 }
+

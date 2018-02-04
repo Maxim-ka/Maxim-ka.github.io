@@ -1,0 +1,392 @@
+html,
+body {
+    height: 100%;
+
+    background: #f8f8f8;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+
+    color: blue;
+}
+
+hr {
+    clear: both;
+
+    color: black;
+}
+
+p {
+    text-align: justify;
+    text-indent: 3%;
+}
+
+.container,
+.downline,
+.footer {
+    min-width: 500px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.container {
+    min-height: 100%;
+}
+
+.header {
+    width: 100%;
+    min-height: 15%;
+
+    background: url('../img/telefon.png');
+    background-size: cover;
+}
+
+.header img {
+    margin: 2% 4%;
+}
+
+#menu {
+    font-family: serif;
+    font-size: 150%;
+    font-style: italic;
+
+    float: right;
+
+    margin-top: 7%;
+    margin-right: 3%;
+
+    color: black;
+}
+
+#menu li {
+    font-weight: 600;
+
+    float: left;
+
+    margin: 0 10px;
+}
+
+#menu li a {
+    display: inline;
+
+    padding: 0 10px;
+
+    border: 1px solid blue;
+    border-radius: 20px;
+    background: #f8f8f8;
+}
+
+#menu #current {
+    display: inline;
+
+    padding: 0 10px;
+
+    border: 1px solid #f8f8f8;
+    border-radius: 20px;
+    background: #f8f8f8;
+}
+
+@media screen and (max-width: 775px) {
+    #menu {
+        margin: 15px 4%;
+    }
+
+    #menu li {
+        float: none;
+
+        margin: 10px 0;
+    }
+
+    .header img {
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+}
+
+#menu li a:link:hover {
+    color: yellow;
+    background: green;
+}
+
+#menu li a:visited:hover {
+    color: yellow;
+    background: black;
+}
+
+#menu li a:active {
+    color: red;
+    background: yellow;
+}
+
+.heading {
+    font-size: 18px;
+    font-weight: 400;
+
+    color: black;
+    background: #eaeaea;
+}
+
+#short {
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+
+    overflow: hidden;
+
+    color: #707070;
+}
+
+.detailed {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    text-align: left;
+
+    color: #484343;
+}
+
+#short::first-letter,
+.detailed::first-letter {
+    font-family: cursive;
+    font-size: 22px;
+}
+
+#list {
+    font-family: cursive;
+    font-style: italic;
+
+    list-style: url(../img/2.png);
+
+    text-decoration: underline;
+
+    text-decoration-style: dotted;
+}
+
+
+
+/* как 2-ой вариант оформления списка с картинками*/
+
+#list_v2 li {
+    font-family: cursive;
+    font-style: italic;
+
+    padding: 5px 30px;
+
+    text-decoration: underline;
+
+    background: url(../img/4.gif) no-repeat 0 50%;
+
+    text-decoration-style: dashed;
+}
+
+input,
+textarea {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+
+
+/*при 2-м варианте это надо будет закомментировать*/
+
+input[required]::placeholder,
+textarea::placeholder {
+    padding-left: 20px;
+
+    text-transform: none;
+}
+
+input[required],
+textarea {
+    font-style: italic;
+
+    max-width: 420px;
+
+    text-transform: capitalize;
+    /*после ввода большие буквы остаются*/
+}
+
+input[required] {
+    height: 29px;
+}
+
+input[placeholder='Ваш E-mail']:focus {
+    color: blue;
+    background: yellow;
+}
+
+
+
+/*как 2-ой вариант большие буквы ТОЛЬКО ПРИ ВВОДЕ ТЕКСТА*/
+
+
+/*input[type="text"]:focus,
+textarea:focus{
+	text-transform: capitalize; 		
+} */
+
+textarea {
+    max-width: 490px;
+    height: 150px;
+}
+
+form p {
+    font-family: fantasy;
+    font-size: 18px;
+    text-overflow: ellipsis;
+}
+
+.feedback {
+    max-width: 500px;
+	padding-left: 2px;
+	padding-bottom: 10px; 
+    border: 3px ridge #00FF00;
+    border-radius: 25px;
+}
+
+.col-md-4,
+img[alt='phone.jpg'] {
+    outline-width: 5px;
+    outline-style: outset;
+    outline-color: #d3d3d3;
+    /*outline-offset: -5px;*/
+}
+
+img[alt='phone.jpg']:hover {
+    /*outline-style: none; */
+    /*как вариант*/
+    outline-color: transparent;
+}
+
+
+
+/*для IE*/
+
+a img {
+    border: none;
+}
+
+table {
+    font-family: monospace;
+    font-size: 16px;
+
+    width: 350px;
+    height: 200px;
+    /*border: 2px solid #000;*/
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+
+    border: 1px solid #000;
+}
+
+th {
+    height: 25px;
+}
+
+.footer {
+    height: 75px;
+
+    background: grey;
+}
+
+.footer p {
+    float: right;
+
+    margin-top: 3%;
+    margin-right: 5%;
+}
+
+h1.heading+a img {
+    float: left;
+
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+#buy {
+    position: relative;
+
+    overflow: hidden;
+
+    height: 240px;
+}
+
+input[name='buy'] {
+    font: bold 115% sans-serif;
+
+    position: absolute;
+    top: 211px;
+}
+
+#buy+.heading {
+    clear: both;
+}
+
+input[name='buy']:hover {
+    border: 2px solid red;
+}
+
+input[name='buy']:active {
+    color: white;
+    background: black;
+}
+
+.col-md-4 {
+    display: flex;
+
+    width: 29%;
+    height: 300px;
+    margin: 2% 2%;
+
+    justify-content: center;
+}
+
+.col-md-4 p {
+    display: flex;
+    flex-direction: column;
+
+    margin: 18% 0;
+
+    align-items: center;
+}
+
+.col-md-4 p img {
+    width: 108px;
+    height: 139px;
+}
+
+.col-md-4 h3 {
+    display: flex;
+
+    max-width: 100%;
+
+    align-self: center;
+}
+
+
+
+/*не удобство при адаптивности нескольких строк bootstrap сетки*/
+
+@media screen and (max-width: 995px) {
+    .col-md-4 {
+        width: 38%;
+        margin: 6% 6%;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .col-md-4 {
+        width: 56%;
+        margin: 3% 19%;
+    }
+}

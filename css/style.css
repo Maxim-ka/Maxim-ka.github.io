@@ -391,3 +391,41 @@ input[name='buy']:active {
     }
 }
 
+/*хак для ie 10*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   /* стили только для IE10 */
+   
+    a img {
+        border: none;
+    }
+   
+   textarea {
+        width: 500px;    
+   }
+
+   .col-md-4 {    
+        width: 29%;
+        height: 300px;
+        margin: 2% 2%;
+        text-align: center;
+        vertical-align: middle;   
+    }
+
+    .col-md-4 p {    
+        text-align: center;        
+    }
+
+    .col-md-4 p img {
+        width: 108px;
+        height: 139px;
+        margin-bottom: 20px;    
+    }
+
+    .col-md-4 h3 {
+        margin: 50% 0;
+        text-align: center;
+        max-width: 100%;            
+    }
+}
+
+
